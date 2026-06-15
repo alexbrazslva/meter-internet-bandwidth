@@ -26,25 +26,36 @@ bash
 pip install speedtest-cli
 
 
+
 ## Usage
 
 bash
 python speed-test-bandwidth.py
 
 
+
 ## Example output
+
 
 
 🛰️  Connecting to test servers... Please wait.
 📥 Testing DOWNLOAD speed...
 📤 Testing UPLOAD speed...
 
-==============================
-          TEST RESULTS          
-==============================
+# 
+
+# ==============================
+
+# &#x09;TEST RESULTS
+
 ⚡ Download: 87.34 Mbps
 ⚡ Upload:   23.12 Mbps
-==============================
+===
+
+# ==============================
+
+
+
 
 
 ## Roadmap
