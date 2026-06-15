@@ -27,3 +27,32 @@ def medir_internet(): # O "def" é usado para definir uma função em Python. El
 if __name__ == "__main__": # É uma variável especial que verifica se o script está sendo executado diretamente (como o programa principal) e não importado como um módulo em outro script. Se for o caso, a função medir_internet() será chamada para executar o teste de velocidade da internet.
     medir_internet() # Chama a função medir_internet() para executar o teste de velocidade da internet.\ Quando o script é executado, ele verificará se é o programa principal e, se for, chamará a função para realizar o teste e exibir os resultados.
 
+
+############################################################################################
+                            # O QUE ACONTECE, PASSO A PASSO
+############################################################################################
+# 1. Python lê import speedtest e import time → carrega as bibliotecas
+# 2. Python lê o def medir_internet(): → guarda a função na memória (não executa nada ainda)
+# 3. Python chega no if __name__ == "__main__": → checa a condição
+# 4. Condição é True (porque você rodou o arquivo diretamente) → entra no bloco
+# 5. Só agora executa medir_internet() → e aí sim, todo o conteúdo da função roda
+
+
+################################################################################
+                    #EXEMPLIFICANDO "if __name__ == "__main__":"
+################################################################################
+# Se você roda python medir.py diretamente → __name__ vale "__main__"
+# Se outro arquivo faz import medir → __name__ vale "medir" (o nome do arquivo)
+
+
+                    # CENÁRIO A - RODANDO DIRETO:
+# Nome do arquivo: "python medir.py"
+# __name__ é "__main__" → Logo a condição é True → medir_internet() executa.
+
+
+                # CENÁRIO B - IMPORTANDO DE OUTRO ARQUIVO:
+# arquivo: app.py
+# import medir
+# "medir_internet()" NÃO executa automaticamente aqui
+# porque __name__ dentro de medir.py virou "medir", não "__main__"
+# medir.medir_internet()   # só executa se você chamar explicitamente
