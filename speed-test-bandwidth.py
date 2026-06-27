@@ -1,5 +1,4 @@
 import speedtest #importação da biblioteca do "speedtest"
-import time
 
 def medir_internet(): # O "def" é usado para definir uma função em Python. Ele indica o início da definição da função e é seguido pelo nome da função (medir_internet) e parênteses que podem conter parâmetros (neste caso, não há parâmetros). O código dentro da função é indentado para indicar que pertence à função. Quando a função é chamada, o código dentro dela será executado.
     print("🛰️  Conectando aos servidores de teste... Aguarde.")
