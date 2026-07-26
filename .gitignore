@@ -1,5 +1,16 @@
+﻿# Cache do Python
 __pycache__/
-*.pyc
+*.py[cod]
+
+# Arquivos de backup
 *.bkp
-*.env
-*.venv
+
+# Arquivos de configuração/segredos
+.env
+.env.*
+!.env.example
+
+# Ambiente virtual (A barra no final indica que é um diretório)
+.venv/
+venv/
+ENV/
